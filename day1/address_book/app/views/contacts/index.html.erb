@@ -4,6 +4,8 @@
   <%= text_field_tag(:search) %>
   <%= submit_tag("Search") %>
 <% end %>
+<%= link_to "Create new contact", new_contact_path %>
+<% if @contacts.any? %>
 <ul>
 	<%= @contacts.each do |contact| %>
 	<li>
@@ -11,3 +13,4 @@
 	</li>
 	<% end %>
 </ul>
+<% end %>
