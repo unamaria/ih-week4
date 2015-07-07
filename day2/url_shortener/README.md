@@ -1,0 +1,30 @@
+# URL Shortener
+
+Let's build a URL Shortener. We will make a web application where we can add new urls and we will be assigned a shortened version. Then if we visit that shortened version we will be redirected to the url provided.
+
+## Iteration 1
+
+Maybe you are asking yourself how to start. Well, as usual, the first step is creating a model. We'll call it Link. This model should have two attributes; one that stores the original url and another one that stores the short one.
+
+But there is a little detail you have to keep in mind. Lets take a deeper look to the shortened link:
+```
+http://localhost:3000/345
+```
+So we need a route like this:
+```
+get '/:shortlink' => ...
+```
+This route takes us to an action in the controller that redirects to the original link. But remember the eternal principle of the separation of concerns: the logic goes in the model. At this point of the game you should know what I mean...
+
+So just take the :shortlink param and send it to a method in the model that searches by this attribute. And once you have the link, redirect to that page using the redirect_to method.
+
+For now, you can set the shortlink the way you want. However, don't think about it too hard because we will change it in a second.
+
+
+## Iteration 2: Random shortlink generator
+
+Now that the basic functionality is set, lets add some flexibility to it. We want to store thousands of urls on our site, so we need to generate randomly our shortlinks, and we want to use letters both in upper and downcase.
+
+For now we are going to generate shortlinks with 3 characters. But we want to have the option to change it in the future.
+
+So lets build a method that takes a random value from a range as many times as the number we pass as a parameter (3 in this case).
