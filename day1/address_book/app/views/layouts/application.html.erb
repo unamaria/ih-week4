@@ -7,13 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Address Book</h1>
+	<nav>
+		<ul>
+			<li><%= link_to 'All contacts', contacts_path %></li>
+			<li><%= link_to "Favourite contacts", "/favourites" %>
+</li>
+			<li><%= link_to "Create new contact", new_contact_path %></li>
+		</ul>
+	</nav>
+	<h1>Address Book</h1>
 
-<% flash.each do |key, value| %>
-	<%= content_tag :div, value, class: "flash-info" %>
-<% end %>
+	<% flash.each do |key, value| %>
+		<%= content_tag :div, value, class: "flash-info" %>
+	<% end %>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
