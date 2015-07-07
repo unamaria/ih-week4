@@ -1,6 +1,8 @@
 <h2>Add new contact</h2>
 
 <%= form_for(@contact) do |f| %>
+	<%= render "layouts/errors", model: @contact %>
+
 	<div class="field">
 		<p><%= f.label :name %></p>
 		<%= f.text_field :name %>
