@@ -1,21 +1,22 @@
 <h2><%= @contact.name %></h2>
 
 <% if @contact.favourite == true %>
-<h3>Favourite</h3>
+<h3 class="fav">Favourite</h3>
 <% end %>
 
 <p><%= @contact.address %></p>
 <p><%= @contact.phone_number %></p>
 <p><%= @contact.email %></p>
 
-<%= form_tag(contact_path(@contact), method:"delete") do %>
-	<input type="submit" value="Delete contact">
-<% end %>
+<%= link_to "Edit", edit_contact_path %>
 
 <% if !@contact.favourite == true %>
 	<%= form_tag "/contacts/favourite/" + @contact.id.to_s do %>
-		<input type="submit" value="Mark as favourite">
+		<input class="submit" type="submit" value="Mark as favourite">
 	<% end %>
 <% end %>
 
-<%= link_to "Edit", edit_contact_path %>
+<%= form_tag(contact_path(@contact), method:"delete") do %>
+	<input class="submit warning" type="submit" value="Delete contact">
+<% end %>
+

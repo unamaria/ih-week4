@@ -6917,3 +6917,533 @@ Processing by ContactsController#edit as HTML
   Rendered contacts/_form.html.erb (6.3ms)
   Rendered contacts/edit.html.erb within layouts/application (7.6ms)
 Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:25:22 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (2.8ms)
+  Rendered contacts/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:25:22 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:25:22 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:25:22 +0200
+
+
+Started GET "/assets/application.self-ff4d107323f9799dfe674d1e3e40b1c108c75f6bbdf966fea36f7dd99c488762.css?body=1" for ::1 at 2015-07-07 16:25:22 +0200
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:25:47 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (5.0ms)
+  Rendered contacts/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:25:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:25:47 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:25:47 +0200
+
+
+Started GET "/assets/application.self-504173bf4f806e4b1b33ec160fffd5f4ab1b76362431b43edc7fc404b1014fc9.css?body=1" for ::1 at 2015-07-07 16:25:47 +0200
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:26:05 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (2.8ms)
+  Rendered contacts/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-3d535f03124a84a0ee4691fa7e72b0e371b5fba64f79ca4f4b684670edf37f50.css?body=1" for ::1 at 2015-07-07 16:26:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:26:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:26:05 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:26:05 +0200
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:26:26 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (2.9ms)
+  Rendered contacts/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:26:26 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:26:26 +0200
+
+
+Started GET "/assets/application.self-e4fdf6975e6ca42acfc50aaea1a6a28698472d79b3b536bf7693071561febd39.css?body=1" for ::1 at 2015-07-07 16:26:26 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:26:26 +0200
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:27:03 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (3.2ms)
+  Rendered contacts/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:27:03 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:27:03 +0200
+
+
+Started GET "/assets/application.self-ddf848e0b946fa6ae8e2d3b9a3f03027b071fa9e7695a334d82c9516b132f585.css?body=1" for ::1 at 2015-07-07 16:27:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:27:03 +0200
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:27:27 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (5.3ms)
+  Rendered contacts/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:27:28 +0200
+
+
+Started GET "/assets/application.self-89187e0455d12a915804a6182642bdb1aa8d94d97add3f93e7fcaa527b36cbdf.css?body=1" for ::1 at 2015-07-07 16:27:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:27:28 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:27:28 +0200
+
+
+Started GET "/favourites" for ::1 at 2015-07-07 16:28:19 +0200
+Processing by ContactsController#index_favourites as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts" WHERE "contacts"."favourite" = ?  [["favourite", "t"]]
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."favourite" = ?[0m  [["favourite", "t"]]
+  Rendered contacts/index_favourites.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:28:22 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:28:48 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:28:48 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:28:48 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:28:48 +0200
+
+
+Started GET "/assets/application.self-12f1d28b6bdc3070f4f427a9cdc445ca165f51dea25580f8303cd0393ebaf61a.css?body=1" for ::1 at 2015-07-07 16:28:48 +0200
+
+
+Started GET "/contacts/3" for ::1 at 2015-07-07 16:29:07 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered contacts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/3/edit" for ::1 at 2015-07-07 16:29:17 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_errors.html.erb (0.1ms)
+  Rendered contacts/_form.html.erb (5.1ms)
+  Rendered contacts/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/3/edit" for ::1 at 2015-07-07 16:29:34 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (3.8ms)
+  Rendered contacts/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-f668f01a6a7fd8d8ff71e63273d052b7a4bebd4eac889d2ed519168d198a97a0.css?body=1" for ::1 at 2015-07-07 16:29:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:29:34 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:29:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:29:34 +0200
+
+
+Started GET "/contacts/3/edit" for ::1 at 2015-07-07 16:29:42 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_errors.html.erb (0.1ms)
+  Rendered contacts/_form.html.erb (3.5ms)
+  Rendered contacts/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:29:42 +0200
+
+
+Started GET "/assets/application.self-aa0ec1dfa0a84032f5ed688b862cfd653d265a2dbfbc0e0796ab9b0d26fad1d4.css?body=1" for ::1 at 2015-07-07 16:29:42 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:29:42 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:29:42 +0200
+
+
+Started GET "/contacts/3/edit" for ::1 at 2015-07-07 16:29:52 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (4.0ms)
+  Rendered contacts/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:29:52 +0200
+
+
+Started GET "/assets/application.self-a6e739c9d30ce5c66cf563fe51ba1d3f590e07aa0bda5eadb0786bbf23ee8101.css?body=1" for ::1 at 2015-07-07 16:29:52 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:29:52 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:29:52 +0200
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:30:06 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/5" for ::1 at 2015-07-07 16:30:08 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered contacts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/5" for ::1 at 2015-07-07 16:34:28 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered contacts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-189982ae418fe18fcc149355a4970d3e1d046a5cda1deed138d11f263cfff0df.css?body=1" for ::1 at 2015-07-07 16:34:28 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:34:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:34:28 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:34:28 +0200
+
+
+Started GET "/contacts/5" for ::1 at 2015-07-07 16:34:30 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered contacts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:34:30 +0200
+
+
+Started GET "/assets/application.self-189982ae418fe18fcc149355a4970d3e1d046a5cda1deed138d11f263cfff0df.css?body=1" for ::1 at 2015-07-07 16:34:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:34:30 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:34:30 +0200
+
+
+Started GET "/contacts/5/edit" for ::1 at 2015-07-07 16:34:35 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (4.5ms)
+  Rendered contacts/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/5/edit" for ::1 at 2015-07-07 16:37:49 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (3.4ms)
+  Rendered contacts/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-189982ae418fe18fcc149355a4970d3e1d046a5cda1deed138d11f263cfff0df.css?body=1" for ::1 at 2015-07-07 16:37:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:37:49 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:37:49 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:37:49 +0200
+
+
+Started GET "/contacts/5/edit" for ::1 at 2015-07-07 16:38:39 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered contacts/_form.html.erb (2.9ms)
+  Rendered contacts/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-263022d4a44f64286507f9b59fa4f3665a63865991372a39276e160d4cf6b2b5.css?body=1" for ::1 at 2015-07-07 16:38:39 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:38:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:38:39 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:38:39 +0200
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:38:47 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts/32" for ::1 at 2015-07-07 16:38:49 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 32]]
+  Rendered contacts/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/32" for ::1 at 2015-07-07 16:40:01 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered contacts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-493440807f72e33cb5acf3db5f6f74405dcf2cda34a217204c4a16166a883200.css?body=1" for ::1 at 2015-07-07 16:40:01 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:40:01 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:40:01 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:40:01 +0200
+
+
+Started GET "/contacts/32" for ::1 at 2015-07-07 16:40:47 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 32]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:40:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:40:48 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:40:48 +0200
+
+
+Started GET "/assets/application.self-8791ae5aab7ffca304a6854614b56b66e6689a330d43b2f3e5676ddb39a72f0c.css?body=1" for ::1 at 2015-07-07 16:40:48 +0200
+
+
+Started GET "/contacts/32" for ::1 at 2015-07-07 16:40:57 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:40:57 +0200
+
+
+Started GET "/assets/application.self-0a4b6766499bf506f26ee0fd54c2cd85b2d862c1a3c4431fafc4ba24edf26e11.css?body=1" for ::1 at 2015-07-07 16:40:57 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:40:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:40:58 +0200
+
+
+Started GET "/contacts/32" for ::1 at 2015-07-07 16:41:24 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 32]]
+  Rendered contacts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-0a4b6766499bf506f26ee0fd54c2cd85b2d862c1a3c4431fafc4ba24edf26e11.css?body=1" for ::1 at 2015-07-07 16:41:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:41:24 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:41:24 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:41:24 +0200
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:41:29 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts/2" for ::1 at 2015-07-07 16:41:33 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered contacts/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/favourites" for ::1 at 2015-07-07 16:41:36 +0200
+Processing by ContactsController#index_favourites as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts" WHERE "contacts"."favourite" = ?[0m  [["favourite", "t"]]
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."favourite" = ?  [["favourite", "t"]]
+  Rendered contacts/index_favourites.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/1" for ::1 at 2015-07-07 16:41:37 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/1" for ::1 at 2015-07-07 16:43:45 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered contacts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:43:45 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:43:45 +0200
+
+
+Started GET "/assets/application.self-f4efe26b619cc6a830f8bc008b98247d08b4ea3f2099fca69e28317b2576c0e6.css?body=1" for ::1 at 2015-07-07 16:43:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:43:45 +0200
+
+
+Started GET "/contacts/1" for ::1 at 2015-07-07 16:43:57 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered contacts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:43:57 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:43:57 +0200
+
+
+Started GET "/assets/application.self-c6eed8d9d9c0cc5b802571d023fe50fd471635cc9996cef0675d933914965738.css?body=1" for ::1 at 2015-07-07 16:43:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:43:57 +0200
