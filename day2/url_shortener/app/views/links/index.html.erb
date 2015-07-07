@@ -14,7 +14,7 @@
 	<% @links.each do |link| %>
 	<tr>
 		<td><%= link.original_url %></td>
-		<td><%= link_to link.short_url, link.original_url %></td>
+		<td><%= link_to 'http://localhost:3000/' + link.short_url, link.short_url %></td>
 	</tr>
 	<% end %>
 </table>

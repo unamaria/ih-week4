@@ -9,6 +9,6 @@ class LinksController < ApplicationController
   end
 
   def short_to_original
-    Link.find_by(short_url: params[:shortlink]).original_url
+    redirect_to Link.find_by(short_url: params[:shortlink]).original_url
   end
 end

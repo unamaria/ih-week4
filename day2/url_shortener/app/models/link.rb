@@ -7,7 +7,7 @@ class Link < ActiveRecord::Base
   end
 
   def shorten_url
-    self.short_url = 'http://localhost:3000/' + random_string
+    self.short_url = random_string
   end
 
   def random_string(length=3)
