@@ -8,12 +8,15 @@ class ContactsController < ApplicationController
   def show
     @contact = Contact.find params[:id]
   end
+  def edit
+    @contact = Contact.find params[:id]
+  end
   def search
     @search = params[:search]
     @contacts_search = Contact.where("name LIKE ?", "#{@search}%")
   end
   def create
-    @contact = Contact.new(name: params[:contact][:name], address: params[:contact][:address], phone_number: params[:contact][:phone_number], email: params[:contact][:email])
+    @contact = Contact.new(contact_params)
     
     if @contact.valid?
       @contact.save
@@ -26,6 +29,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name)
+    params.require(:contact).permit(:name, :address)
   end
 end

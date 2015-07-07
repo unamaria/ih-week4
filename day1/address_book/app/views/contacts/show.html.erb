@@ -2,4 +2,6 @@
 <p><%= @contact.address %></p>
 <p><%= @contact.phone_number %></p>
 <p><%= @contact.email %></p>
-<p><%= link_to 'Back to all contacts', '/contacts' %></p>
+
+<%= link_to "Edit", edit_contact_path %>
+<p><%= link_to 'Back to all contacts', contacts_path %></p>

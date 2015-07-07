@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :contacts, only: [:index, :create, :show, :new]
+  resources :contacts, only: [:index, :create, :show, :new, :edit, :update]
   get ('/search') => 'contacts#search'
   # get ('/new') => 'contacts#new'
 
