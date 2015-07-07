@@ -1,21 +1,23 @@
 <h2>Paste the link you want to shorten</h2>
 
 <%= form_tag(links_path, method: "post") do %>
-		<p><%= label_tag :original_url %></p>
 		<%= text_field_tag :original_url %>
-		<%= submit_tag %>
+		<%= submit_tag 'Shorten' %>
 <% end %>
 
-<!-- display list @links -->
 <% if @links.any? %>
-<ul>
+<table>
+	<tr>
+		<th>Original url</th>
+		<th>Short url</th>
+	</tr>
 	<% @links.each do |link| %>
-	<li>
-		<%= link.original_url %>
-		<%= link.short_url %>
-	</li>
+	<tr>
+		<td><%= link.original_url %></td>
+		<td><%= link_to link.short_url, link.original_url %></td>
+	</tr>
 	<% end %>
-</ul>
+</table>
 <% else %>
 <p>No links yet</p>
 <% end %>

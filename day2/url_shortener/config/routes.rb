@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'links#index'
-  # get '/:shortlink' => 
   resources :links, only: [:index, :create]
+  get '/:shortlink' => 'links#short_to_original'
 end
