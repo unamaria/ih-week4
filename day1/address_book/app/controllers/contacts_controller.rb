@@ -13,10 +13,10 @@ class ContactsController < ApplicationController
     @contacts_search = Contact.where("name LIKE ?", "#{@search}%")
   end
   def create
-    # Contact.create!(name: params[:name], address: params[:address], phone_number: params[:phone_number], email: params[:email])
-    contact = Contact.create(name: params[:contact][:name], address: params[:contact][:address], phone_number: params[:contact][:phone_number], email: params[:contact][:email])
-    if contact.present?
-      redirect_to :action => :index
+    contact = Contact.new(name: params[:contact][:name], address: params[:contact][:address], phone_number: params[:contact][:phone_number], email: params[:contact][:email])
+    if contact.valid?
+      contact.save
+      redirect_to :action => 'show', :id => contact.id
     else
       render :new
     end
