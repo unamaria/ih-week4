@@ -1,9 +1,11 @@
 <h2>Contacts</h2>
+
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:search, "Search contacts:") %>
   <%= text_field_tag(:search) %>
   <%= submit_tag("Search") %>
 <% end %>
+
 <% if @contacts.any? %>
 <ul>
 	<% @contacts.each do |contact| %>
