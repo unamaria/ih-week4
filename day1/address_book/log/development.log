@@ -6302,3 +6302,519 @@ Processing by ContactsController#index as HTML
   [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
   Rendered contacts/index.html.erb within layouts/application (2.9ms)
 Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 15:53:25 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 15:53:25 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 15:53:25 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 15:53:25 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 15:53:25 +0200
+
+
+Started GET "/contacts/8" for ::1 at 2015-07-07 15:53:28 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 15:56:25 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contacts/14" for ::1 at 2015-07-07 15:56:29 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered contacts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/contacts/14" for ::1 at 2015-07-07 15:56:31 +0200
+
+ActionController::RoutingError (No route matches [POST] "/contacts/14"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.5ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (29.8ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (68.9ms)
+
+
+Started POST "/contacts/14" for ::1 at 2015-07-07 15:58:27 +0200
+
+ActionController::RoutingError (No route matches [POST] "/contacts/14"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (28.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (66.4ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 15:58:34 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 15:58:38 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+.../contacts/" + @contact.id.to_s, method:"delete") do @output_...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+...ntact.id.to_s, method:"delete") do @output_buffer.safe_appen...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting ')'
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+  app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.6ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (28.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (64.2ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:03:42 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected tLABEL
+....append=  form_tag (controller: "contacts", action: "destroy...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+...rm_tag (controller: "contacts", action: "destroy", method:"d...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+... "contacts", action: "destroy", method:"delete") do @output_...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+...on: "destroy", method:"delete") do @output_buffer.safe_appen...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/contacts/show.html.erb:7: syntax error, unexpected tLABEL
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+  app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (31.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (66.7ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:06:20 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected tLABEL
+....append=  form_tag (controller: "contacts", action: "destroy...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+...rm_tag (controller: "contacts", action: "destroy", method:"d...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+... "contacts", action: "destroy", method:"delete") do @output_...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+...on: "destroy", method:"delete") do @output_buffer.safe_appen...
+...                               ^
+/Users/Xavier/Documents/ironhack/week4_repo/day1/address_book/app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/contacts/show.html.erb:7: syntax error, unexpected tLABEL
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ',', expecting keyword_end
+  app/views/contacts/show.html.erb:7: syntax error, unexpected ')', expecting keyword_end
+  app/views/contacts/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (64.1ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:06:57 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 16:06:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:06:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:06:57 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:06:57 +0200
+
+
+Started POST "/contacts/13?method=delete" for ::1 at 2015-07-07 16:07:07 +0200
+
+ActionController::RoutingError (No route matches [POST] "/contacts/13"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (28.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (64.2ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:08:05 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (no implicit conversion of Fixnum into Hash):
+    4: <p><%= @contact.phone_number %></p>
+    5: <p><%= @contact.email %></p>
+    6: 
+    7: <%= form_tag(controller: "contacts", action: "destroy", method:"delete", params: @contact.id) do %>
+    8: 	<input type="submit" value="Delete contact">
+    9: <% end %>
+   10: 
+  app/views/contacts/show.html.erb:7:in `_app_views_contacts_show_html_erb__2489520344785621257_70362402481820'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (29.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (65.0ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:08:29 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 16:08:29 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:08:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:08:29 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:08:29 +0200
+
+
+Started POST "/contacts/13?id=13&method=delete" for ::1 at 2015-07-07 16:09:25 +0200
+
+ActionController::RoutingError (No route matches [POST] "/contacts/13"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Xavier/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (41.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (88.2ms)
+
+
+Started GET "/contacts/13" for ::1 at 2015-07-07 16:11:52 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 16:11:52 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:11:52 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:11:52 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:11:52 +0200
+
+
+Started DELETE "/contacts/13" for ::1 at 2015-07-07 16:12:16 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/j4d4ZU/lRbBDBp/6ZEhP1kAsTLSDk2UMms/IsiUynMEMqNWjZTagjE+4BiiIU8JD1pIVmLgHZKiWcE4xs8MVQ==", "id"=>"13"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `destroy' for "13":String):
+  app/controllers/contacts_controller.rb:15:in `destroy'
+
+
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Xavier/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (78.1ms)
+
+
+Started DELETE "/contacts/13" for ::1 at 2015-07-07 16:14:08 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/j4d4ZU/lRbBDBp/6ZEhP1kAsTLSDk2UMms/IsiUynMEMqNWjZTagjE+4BiiIU8JD1pIVmLgHZKiWcE4xs8MVQ==", "id"=>"13"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 13]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:14:08 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-07 16:14:08 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-07 16:14:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-07 16:14:08 +0200
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-07-07 16:14:08 +0200
+
+
+Started GET "/contacts/15" for ::1 at 2015-07-07 16:14:10 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 15]]
+  Rendered contacts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contacts/15" for ::1 at 2015-07-07 16:14:13 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBpw3R3oMjwtVPVLJE5eqfsaPRTiGm4Px6fEVnRFe3ryFs5qBUN9qN1mDyxv/jCfrUDEcFL0PglXlTpMeh69XA==", "id"=>"15"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 15]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:14:13 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.4ms)

@@ -11,6 +11,10 @@ class ContactsController < ApplicationController
   def edit
     @contact = Contact.find params[:id]
   end
+  def destroy
+    Contact.find(params[:id]).destroy
+    redirect_to contacts_path, notice: 'Contact deleted'
+  end
   def search
     @search = params[:search]
     @contacts_search = Contact.where("name LIKE ?", "#{@search}%")

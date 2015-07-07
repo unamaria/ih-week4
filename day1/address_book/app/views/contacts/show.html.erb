@@ -4,6 +4,10 @@
 <p><%= @contact.phone_number %></p>
 <p><%= @contact.email %></p>
 
+<%= form_tag(contact_path(@contact), method:"delete") do %>
+	<input type="submit" value="Delete contact">
+<% end %>
+
 <% if !@contact.favourite == true %>
 	<%= form_tag "/contacts/favourite/" + @contact.id.to_s do %>
 		<input type="submit" value="Mark as favourite">
