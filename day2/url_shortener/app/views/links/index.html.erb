@@ -5,6 +5,10 @@
 		<%= submit_tag 'Shorten' %>
 <% end %>
 
+<% flash.each do |key, value| %>
+		<%= content_tag :div, value, class: "flash-info" %>
+	<% end %>
+
 <% if @links.any? %>
 <table>
 	<tr>

@@ -5,8 +5,12 @@ class LinksController < ApplicationController
 
   def create
     original_url = check_http(params[:original_url])
-    @link = Link.create(original_url: original_url)
-    redirect_to links_path
+    if exists?(original_url)
+      @link = Link.find_by(original_url: original_url)
+    else
+      @link = Link.create(original_url: original_url)
+    end
+    redirect_to links_path, notice: 'Short URL: ' + @link.short_url
   end
 
   def short_to_original
@@ -21,5 +25,9 @@ class LinksController < ApplicationController
     end
 
     original_url
+  end
+
+  def exists?(original_url)
+    Link.find_by(original_url: original_url)
   end
 end
