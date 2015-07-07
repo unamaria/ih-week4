@@ -3,5 +3,9 @@
 <p><%= @contact.phone_number %></p>
 <p><%= @contact.email %></p>
 
+<%= form_tag "/contacts/favourite/" + @contact.id.to_s do %>
+	<input type="submit" value="Mark as favourite">
+<% end %>
+
 <%= link_to "Edit", edit_contact_path %>
 <p><%= link_to 'Back to all contacts', contacts_path %></p>

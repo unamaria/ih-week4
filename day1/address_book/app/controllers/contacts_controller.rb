@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
     
     if @contact.valid?
       @contact.save
-      redirect_to :action => 'show', :id => @contact.id, notice: 'Project was successfully created'
+      redirect_to :action => 'show', :id => @contact.id, notice: 'Contact was successfully created'
     else
       render :new
     end
@@ -28,10 +28,18 @@ class ContactsController < ApplicationController
   def update
     @contact = Contact.find_by(id: params[:id])
     if @contact.update_attributes(contact_params)
-      redirect_to contacts_path, notice: 'Project was successfully updated.'
+      redirect_to contacts_path, notice: 'Contact was successfully updated.'
     else
       render :edit
     end
+  end
+  def index_favourites
+    @favourites = Contact.where(favourite: true)
+  end
+  def favourite
+    contact = Contact.find(params[:id])
+    contact.update_attribute(:favourite, true)
+    redirect_to contact_path(contact.id), notice: 'Marked as favourite!'
   end
 
   private
