@@ -1,5 +1,9 @@
 <h2><%= @contact.name %></h2>
 
+<% if @contact.favourite == true %>
+<h3>Favourite</h3>
+<% end %>
+
 <p><%= @contact.address %></p>
 <p><%= @contact.phone_number %></p>
 <p><%= @contact.email %></p>

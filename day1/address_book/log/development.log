@@ -6818,3 +6818,102 @@ Processing by ContactsController#index as HTML
   [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
   Rendered contacts/index.html.erb within layouts/application (3.0ms)
 Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/12" for ::1 at 2015-07-07 16:19:02 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered contacts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contacts/12" for ::1 at 2015-07-07 16:19:06 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9OD9RDpUl0AoQ+nYwK6BoizeahEvvdcAf63xHUjj4J8O7EPzIv/Y1NhxE7+LHu+UeoSTdZ9Thwbvnw8HRrgmuQ==", "id"=>"12"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 12]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:19:06 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/16" for ::1 at 2015-07-07 16:19:10 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered contacts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contacts/16" for ::1 at 2015-07-07 16:19:12 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugTuWtjo7+0e3cLdCg3DFtL2341/fy2H7cFMRKKtUIRACFDtwEOgee7vOLpBva0ghKwm6c+RfYF987JerPaWog==", "id"=>"16"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 16]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:19:12 +0200
+Processing by ContactsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts/22" for ::1 at 2015-07-07 16:19:15 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered contacts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/contacts/22" for ::1 at 2015-07-07 16:19:17 +0200
+Processing by ContactsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H5jVoln091+qOqf4fx6JuZFCNesWa1ed3CAVxhDt05bllGsVQV+4y1oIXZ80ruePxxjMj6aFB5tMEuvcHrYVsA==", "id"=>"22"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 22]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/contacts" for ::1 at 2015-07-07 16:19:17 +0200
+Processing by ContactsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contacts/1" for ::1 at 2015-07-07 16:21:16 +0200
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered contacts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contacts/1/edit" for ::1 at 2015-07-07 16:21:22 +0200
+Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_errors.html.erb (0.1ms)
+  Rendered contacts/_form.html.erb (6.3ms)
+  Rendered contacts/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.1ms)

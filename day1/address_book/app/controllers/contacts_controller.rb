@@ -2,26 +2,31 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.order("name ASC")
   end
+
   def new
     @contact = Contact.new
   end
+
   def show
     @contact = Contact.find params[:id]
   end
+  
   def edit
     @contact = Contact.find params[:id]
   end
+  
   def destroy
     Contact.find(params[:id]).destroy
     redirect_to contacts_path, notice: 'Contact deleted'
   end
+  
   def search
     @search = params[:search]
     @contacts_search = Contact.where("name LIKE ?", "#{@search}%")
   end
+  
   def create
-    @contact = Contact.new(contact_params)
-    
+    @contact = Contact.new(contact_params)   
     if @contact.valid?
       @contact.save
       redirect_to :action => 'show', :id => @contact.id, notice: 'Contact was successfully created'
@@ -29,6 +34,7 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+  
   def update
     @contact = Contact.find_by(id: params[:id])
     if @contact.update_attributes(contact_params)
@@ -37,9 +43,11 @@ class ContactsController < ApplicationController
       render :edit
     end
   end
+
   def index_favourites
     @favourites = Contact.where(favourite: true)
   end
+  
   def favourite
     contact = Contact.find(params[:id])
     contact.update_attribute(:favourite, true)
