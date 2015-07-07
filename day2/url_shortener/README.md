@@ -28,3 +28,13 @@ Now that the basic functionality is set, lets add some flexibility to it. We wan
 For now we are going to generate shortlinks with 3 characters. But we want to have the option to change it in the future.
 
 So lets build a method that takes a random value from a range as many times as the number we pass as a parameter (3 in this case).
+
+## Iteration 3: Automatic add http
+
+Let me ask you something... What happens if the user doesn't include the http:// part of the url? Try it!
+
+Well, it seems that we have to fix this problem if we want our customers to be happy. Create a method that checks whether the url that the user inserts has the http:// and if it doesn't, prepends it.
+
+## Iteration 4: Existing shortlinks
+
+Make sure that when a user enters a link that has already been shortened, the app returns the existing shortlink instead of generating a new one. This is a key feature of our app, because it's going to free a lot of memory usage.

@@ -10,7 +10,7 @@ class LinksController < ApplicationController
     else
       @link = Link.create(original_url: original_url)
     end
-    redirect_to links_path, notice: 'Short URL: ' + @link.short_url
+    redirect_to links_path, notice: 'Short URL: http://localhost:3000' + @link.short_url
   end
 
   def short_to_original
