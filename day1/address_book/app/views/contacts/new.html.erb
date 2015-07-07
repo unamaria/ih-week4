@@ -1,5 +1,5 @@
 <h2>Add new contact</h2>
-
+<!-- 
 <%= form_tag("/contacts", method: "post") do %>
 <p>  <%= label_tag(:name, "Name") %>
   </p>  <%= text_field_tag(:name) %>
@@ -11,5 +11,28 @@
   </p>  <%= text_field_tag(:email) %>
 <p>  <%= submit_tag("Save contact") %>
 </p><% end %>
+ -->
+
+<%= form_for(@contact) do |f| %>
+	<div class="field">
+		<p><%= f.label :name %></p>
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<p><%= f.label :address %></p>
+		<%= f.text_field :address %>
+	</div>
+	<div class="field">
+		<p><%= f.label :phone_number %></p>
+		<%= f.text_field :phone_number %>
+	</div>
+	<div class="field">
+		<p><%= f.label :email %></p>
+		<%= f.text_field :email %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>
 
 <p><%= link_to 'Back to all contacts', '/contacts' %></p>
