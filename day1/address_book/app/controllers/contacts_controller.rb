@@ -25,6 +25,14 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+  def update
+    @contact = Contact.find_by(id: params[:id])
+    if @contact.update_attributes(contact_params)
+      redirect_to contacts_path, notice: 'Project was successfully updated.'
+    else
+      render :edit
+    end
+  end
 
   private
 
