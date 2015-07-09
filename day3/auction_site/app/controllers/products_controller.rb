@@ -1,10 +1,10 @@
 class ProductsController < ApplicationController
 	def index
-
+		@products = Product.all
 	end
 
 	def show
-
+		@product = Product.find(params[:id])
 	end
 
 	def new
@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
 		@product = Product.new product_params
 
 		if @product.valid? && @product.present?
+			@product.user_id = 1;
 			@product.save
 			redirect_to product_path(@product), notice: "Product sucessfully added"
 		else
@@ -29,6 +30,6 @@ class ProductsController < ApplicationController
 	private
 
 	def product_params
-		params.require(:product).permit(:name, :description, :deadline, :user_id)
+		params.require(:product).permit(:title, :description, :deadline)
 	end
 end

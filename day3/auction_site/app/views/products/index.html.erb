@@ -1,0 +1,9 @@
+<h2>Products available</h2>
+
+<% if @products.blank? %>
+	<p>No products yet</p>
+<% else %>
+	<% @products.each do |product| %>
+		<%= link_to product.title, products_path(@product) %>
+	<% end %>
+<% end %>
