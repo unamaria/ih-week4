@@ -7,6 +7,9 @@ class ProductsController < ApplicationController
 		@product = Product.find(params[:id])
 		@bid = Bid.new
 		@bids = Bid.where(product_id: @product.id) 
+
+		highest_bid = @product.bids.max_by { |bid| bid.amount }
+		@winner = User.find(highest_bid.user_id)
 	end
 
 	def new

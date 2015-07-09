@@ -10,14 +10,19 @@
 	</ul>
 <% end %>
 
-<h3>Do you want to bid?</h3>
+<% if @product.deadline >= Date.current %>
+	<h3>Do you want to bid?</h3>
 
-<%= form_tag product_bids_path(@product, @bid) do %>
-	<%= label_tag :amount %>
-	<%= number_field_tag :amount %>
-	<br />
-	<%= label_tag :email %>
-	<%= text_field_tag :email %>
-	<br />
-	<%= submit_tag 'Bid!' %>
+	<%= form_tag product_bids_path(@product, @bid) do %>
+		<%= label_tag :amount %>
+		<%= number_field_tag :amount %>
+		<br />
+		<%= label_tag :email %>
+		<%= text_field_tag :email %>
+		<br />
+		<%= submit_tag 'Bid!' %>
+	<% end %>
+<% else %>
+	<p><%= @winner.name %> won this bid</p>
+
 <% end %>
