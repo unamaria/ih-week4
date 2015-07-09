@@ -4,6 +4,8 @@
 	<p>No products yet</p>
 <% else %>
 	<% @products.each do |product| %>
-		<%= link_to product.title, products_path(@product) %>
+		<ul>
+			<li><%= link_to product.title, product_path(product) %></li>
+		</ul>
 	<% end %>
 <% end %>

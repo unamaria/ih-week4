@@ -1,6 +1,6 @@
 <h2>Add new product</h2>
 
-<%= form_for @product do |f| %>
+<%= form_for [@user, @product] do |f| %>
 <%= render 'layouts/errors', model: @product %>
 
 	<%= f.label :title %>
@@ -12,5 +12,7 @@
 	<%= f.label :deadline %>
 	<%= f.date_field :deadline %>
 	<br />
+	<%= f.hidden_field :user_id %>
+
 	<%= f.submit %>
 <% end %>
