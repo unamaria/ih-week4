@@ -1,23 +1,14 @@
 class BidsController < ApplicationController
-	def new
-		@bid = Bid.new
-	end
-
 	def create
-		@bid = Bid.new
+		product = Product.find(params[:product_id])
+		user_id = product.user_id
+		@bid = Bid.new amount: params[:amount], user_id: user_id, product_id: product.id
 
 		if @bid.valid? && @bid.present?
-			@bid.product_id
-			@bid.user_id
 			@bid.save
+			redirect_to product_path(product)
 		else
 			render 'product/params[:id]'
 		end
-	end
-
-	private
-
-	def bid_params
-		params.require(:bid).permit(:amount, :email)
 	end
 end

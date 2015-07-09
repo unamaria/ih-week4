@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
 
 	def show
 		@product = Product.find(params[:id])
+		@bid = Bid.new
+		@bids = Bid.where(product_id: @product.id) 
 	end
 
 	def new

@@ -3,10 +3,16 @@
 <p>Description: <%= @product.description %></p>
 <p>Bidding deadline: <%= @product.deadline %></p>
 
+<h3>Bids for this product</h3>
+<% @bids.each do |bid| %>
+	<ul>
+		<li><strong><%= User.find(@product.user_id).name %>:</strong> <%= bid.amount %>€</li>
+	</ul>
+<% end %>
 
-<h3>Bid for this product!</h3>
+<h3>Do you want to bid?</h3>
 
-<%= form_tag do %>
+<%= form_tag product_bids_path(@product, @bid) do %>
 	<%= label_tag :amount %>
 	<%= number_field_tag :amount %>
 	<br />
