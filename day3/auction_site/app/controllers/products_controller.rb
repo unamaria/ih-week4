@@ -22,12 +22,13 @@ class ProductsController < ApplicationController
 		@user = User.find(params[:user_id])
 		@product = Product.new product_params
 
-		# if @product.valid? && @product.present?
+		if @product.valid? && @product.present?
+			@product.user_id = params[:user_id]
 			@product.save
 			redirect_to user_path(@user), notice: "Product sucessfully added"
-		# else
-			# render :new
-		# end
+		else
+			render :new
+		end
 	end
 
 	def destroy
@@ -37,6 +38,6 @@ class ProductsController < ApplicationController
 	private
 
 	def product_params
-		params.require(:product).permit(:title, :description, :deadline, :user_id)
+		params.require(:product).permit(:title, :description, :min_bid, :deadline)
 	end
 end
