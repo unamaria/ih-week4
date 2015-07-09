@@ -4,3 +4,14 @@
 <p>Bidding deadline: <%= @product.deadline %></p>
 
 
+<h3>Bid for this product!</h3>
+
+<%= form_tag do %>
+	<%= label_tag :amount %>
+	<%= number_field_tag :amount %>
+	<br />
+	<%= label_tag :email %>
+	<%= text_field_tag :email %>
+	<br />
+	<%= submit_tag 'Bid!' %>
+<% end %>
