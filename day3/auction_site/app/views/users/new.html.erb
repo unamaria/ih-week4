@@ -1,9 +1,13 @@
 <h2>Add new user</h2>
 
 <%= form_for @user do |f| %>
+<%= render 'layouts/errors', model: @user %>
+
 	<%= f.label :name %>
 	<%= f.text_field :name %>
+	<br />
 	<%= f.label :email %>
 	<%= f.text_field :email %>
+	<br />
 	<%= f.submit %>
 <% end %>
