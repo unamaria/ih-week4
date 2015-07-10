@@ -10,7 +10,6 @@ class BidsController < ApplicationController
 			@bid.save
 			redirect_to product_path(@product)
 		else
-			@bid = Bid.new
 			@bids = Bid.where(product_id: @product.id) 
 			if !@product.bids.blank? 
 				highest_bid = @product.bids.max_by { |bid| bid.amount }
