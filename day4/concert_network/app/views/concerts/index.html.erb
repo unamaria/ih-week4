@@ -1,10 +1,9 @@
 <h2>Today</h2>
 
+<ul>
 <% @concerts.each do |concert| %>
-	<h3><%= concert.band %></h3>
-	<p><%= concert.venue %></p>
-	<p><%= concert.city %></p>
-	<p><%= concert.date.strftime("%d-%m-%Y %H:%M") %></p>
-	<p><%= concert.price %>€</p>
-	<p><%= concert.description %></p>
+	<li>
+	<%= link_to "#{concert.band} - #{concert.city}", concert_path(concert) %>
+	</li>
 <% end %>
+</ul>

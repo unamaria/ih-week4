@@ -5,6 +5,10 @@ class ConcertsController < ApplicationController
 		@concerts = Concert.where("date >= ? AND date < ?", beginning_of_today, end_of_today)
 	end
 
+	def show
+		@concert = Concert.find(params[:id])
+	end
+
 	def new
 		@concert = Concert.new
 	end
