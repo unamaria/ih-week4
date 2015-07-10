@@ -1,7 +1,17 @@
 <h2>Today</h2>
 
 <ul>
-<% @concerts.each do |concert| %>
+<% @today_concerts.each do |concert| %>
+	<li>
+	<%= link_to "#{concert.band} - #{concert.city}", concert_path(concert) %>
+	</li>
+<% end %>
+</ul>
+
+<h2>Later this month</h2>
+
+<ul>
+<% @today_to_end_month_concerts.each do |concert| %>
 	<li>
 	<%= link_to "#{concert.band} - #{concert.city}", concert_path(concert) %>
 	</li>
