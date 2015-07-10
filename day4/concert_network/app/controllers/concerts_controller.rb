@@ -11,6 +11,8 @@ class ConcertsController < ApplicationController
 
 	def show
 		@concert = Concert.find(params[:id])
+		@comments = Comment.where(concert_id: @concert.id)
+		@comment = Comment.new
 	end
 
 	def new

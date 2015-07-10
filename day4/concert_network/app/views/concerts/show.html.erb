@@ -1,6 +1,24 @@
-<h2><%= @concert.band %> <%= @concert.date.strftime("%d-%m-%Y") %> </h2>
+<h2>
+<%= @concert.band %> <%= @concert.date.strftime("%d-%m-%Y") %> </h2>
+
 <p><%= @concert.venue %></p>
 <p><%= @concert.city %></p>
 <p><%= @concert.date.strftime("%H:%M") %></p>
 <p><%= @concert.price %>€</p>
 <p><%= @concert.description %></p>
+
+<h3>Comments</h3>
+
+<h4>What do you think?</h4>
+<%= form_for [@concert, @comment] do |f| %>
+	<%= f.text_area :text %>
+	<br />
+	<%= f.submit %>
+<% end %>
+
+<h4><%= @comments.count %> comments so far</h4>
+
+<% @comments.each do |comment| %>
+	<p><%= comment.text %></p>
+	<p><%= comment.created_at.strftime("%d-%m-%Y at %H:%M") %></p>
+<% end %>
