@@ -30,7 +30,12 @@ class ConcertsController < ApplicationController
 
 	def search_by_price
 		@amount = params[:amount]
-		@concerts = Concert.where("price <= ?", @amount)
+		today = DateTime.current
+		@concerts = Concert.where("price <= ? AND date >= ?", @amount, today)
+	end
+
+	def popular
+
 	end
 
 	private
