@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ConcertNetwork</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<nav>
+		<ul>
+			<li>Popular concerts</li>
+			<li>Search by price</li>
+		</ul>
+	</nav>
+	<h1>Find your next concert</h1>
+</header>
+
+<%= yield %>
+
+<footer>
+	<small>© Maria Comas 2015</small>
+	<p>Exercise for the web development bootcamp at <a href="http://www.ironhack.com">Ironhack</a></p>
+</footer>
+</body>
+</html>
