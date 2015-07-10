@@ -28,6 +28,11 @@ class ConcertsController < ApplicationController
 		end
 	end
 
+	def search_by_price
+		@amount = params[:amount]
+		@concerts = Concert.where("price <= ?", @amount)
+	end
+
 	private
 
 	def concert_params

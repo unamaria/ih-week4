@@ -1,10 +1,10 @@
 <h2>
 <%= @concert.band %> <%= @concert.date.strftime("%d-%m-%Y") %> </h2>
 
-<p><%= @concert.venue %></p>
-<p><%= @concert.city %></p>
-<p><%= @concert.date.strftime("%H:%M") %></p>
-<p><%= @concert.price %>€</p>
+<p>City: <%= @concert.city %></p>
+<p>Venue: <%= @concert.venue %></p>
+<p>Time: <%= @concert.date.strftime("%H:%M") %></p>
+<p>Price: <%= @concert.price %>€</p>
 <p><%= @concert.description %></p>
 
 <h3>Comments</h3>
@@ -16,9 +16,13 @@
 	<%= f.submit %>
 <% end %>
 
-<h4><%= @comments.count %> comments so far</h4>
+<% if !@comments.blank? %>
+	<h4><%= @comments.count %> comments so far</h4>
 
-<% @comments.each do |comment| %>
-	<p><%= comment.text %></p>
-	<p><%= comment.created_at.strftime("%d-%m-%Y at %H:%M") %></p>
+	<% @comments.each do |comment| %>
+		<p><%= comment.text %></p>
+		<p><%= comment.created_at.strftime("%d-%m-%Y at %H:%M") %></p>
+	<% end %>
+<% else %>
+	<p>Be the first to comment!</p>
 <% end %>
