@@ -17,7 +17,7 @@
 <% end %>
 
 <% if !@comments.blank? %>
-	<h4><%= @comments.count %> comments so far</h4>
+	<h4><%= @comments.count %> <%= "comment".pluralize(@comments.count) %> so far</h4>
 
 	<% @comments.each do |comment| %>
 		<p><%= comment.text %></p>
