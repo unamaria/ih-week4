@@ -35,7 +35,7 @@ class ConcertsController < ApplicationController
 	end
 
 	def popular
-
+		@concerts = Concert.sort_by_comments
 	end
 
 	private
