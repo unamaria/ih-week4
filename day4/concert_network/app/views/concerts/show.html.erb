@@ -1,6 +1,6 @@
 <h2>
 <%= @concert.band %> <%= @concert.date.strftime("%d-%m-%Y") %> </h2>
-
+<%= image_tag @concert.poster.url(:medium) %>
 <p>City: <%= @concert.city %></p>
 <p>Venue: <%= @concert.venue %></p>
 <p>Time: <%= @concert.date.strftime("%H:%M") %></p>
