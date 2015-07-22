@@ -11,4 +11,17 @@ class ApplicationController < ActionController::Base
   	@current_user
   end
 
+  def authorize_user
+  	unless current_user
+  		flash[:message] = "Log in please!"
+  		redirect_to root_path
+  	end
+  end
+
+  def admin_only
+  	unless current_user && current_user.role == "admin"
+  		flash[:message] = "Access denied, you must be an admin to access this page."
+  		redirect_to root_path
+  	end
+  end
 end

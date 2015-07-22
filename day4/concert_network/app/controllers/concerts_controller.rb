@@ -1,4 +1,7 @@
 class ConcertsController < ApplicationController
+	before_action :admin_only, only: [:create, :new]
+
+
 	def index
 		today = DateTime.current
 		
